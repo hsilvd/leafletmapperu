@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>leaflet-map-simple</title>
+  <title>leaflet-map-peru</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
 
@@ -19,7 +19,7 @@
 <body>
 
   <!-- Display the map and title with HTML division tags  -->
-  <div id="map-title">EDIT map title</div>
+  <div id="map-title">My Visit to Peru</div>
   <div id="map"></div>
 
   <!-- Create the interactive map content with JavaScript (.js) -->
@@ -41,8 +41,11 @@
   }).addTo(map);
 
   /* Display a point marker with pop-up text */
-  L.marker([41.77, -72.69]).addTo(map) // EDIT marker coordinates
-  .bindPopup("Insert pop-up text here"); // EDIT pop-up text message
+  L.marker([-12.067, -76.957]).addTo(map) // coord for Naruto La Molina
+  .bindPopup("Nice Japanese Restruant in La Molina"); // desc of Naruto
+    
+    L.marker([-12.113, -77.017]).addTo(map) // coord for Siete Sopas
+  .bindPopup("Restruant Siete Sopas"); // desc of Siete Sopas
 
   </script>
 </body>
